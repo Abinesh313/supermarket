@@ -1,0 +1,208 @@
+/* src/pages/Product/Product.module.css */
+
+.supermarketContainer {
+  display: block;
+  height: 150vh;
+  overflow: hidden;
+}
+
+.mainContent {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+  height: 125vh;
+  box-sizing: border-box;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+  /* position: fixed;  */
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.searchButton {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #218838;
+}
+.voiceSearchButton {
+  background-color: #f5f5f5; /* Light grey background */
+  border: 2px solid #ccc; /* Light grey border */
+  color: #333; /* Dark grey color for the icon */
+  border-radius: 25px; /* Oval shape */
+  padding: 10px 20px; /* Adjust size for oval shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; /* Adjust icon size */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.voiceSearchButton:hover {
+  background-color: #e0f2e9; /* Very light green background on hover */
+  color: #333; /* Maintain dark grey color for the icon */
+  border-color: #a3d9a4; /* Slightly greenish border on hover */
+}
+
+.voiceSearchButton:active {
+  background-color: #c8e6c9; /* Light green background on click */
+  color: #333; /* Maintain dark grey color for the icon */
+  border-color: #8bc34a; /* Green border on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lighter shadow on click */
+}
+
+.cartButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cartIcon {
+  width: 30px;
+  height: auto;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.productItem {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.productImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.productName {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.productPrice {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.addToCartButton {
+  padding: 6px 12px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.addToCartButton:hover {
+  background-color: #218838;
+}
+
+.cartControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantityButton {
+  width: 20px;
+  height: 20px;
+  background-color: #5fef3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.quantityButton:hover {
+  background-color: #4CAF50;
+}
+
+.quantityDisplay {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.noResults {
+  font-size: 1.2em;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+.sortSection {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sortSelect {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.movebro
+{
+  padding-top: 100px;
+}

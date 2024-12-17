@@ -1,0 +1,149 @@
+/* src/pages/Cart/Cart.module.css */
+
+.cartContainer {
+    padding: 20px;
+    height: 100vh; /* Ensure the cart page takes full height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.backButton {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 200px; /* Set a max width for the button */
+    margin: 0 auto; /* Center button horizontally */
+    display: block;
+}
+
+.backButton:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.cartTitle {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow items to take up available space */
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c3e6cb; /* Light green border */
+    padding: 10px 0;
+    margin-bottom: 10px; /* Space between items */
+}
+
+.cartImage {
+    width: 200px; /* Increase image width */
+    height: 200px; /* Increase image height */
+    margin-right: 10px;
+}
+
+.cartDetails {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow details to take up available space */
+}
+
+.cartName {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cartPrice {
+    font-size: 1em;
+    color: #28a745; /* Green price text */
+}
+
+.cartQuantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantityButton {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green background for quantity buttons */
+    color: white;
+    cursor: pointer;
+}
+
+.quantityButton:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.quantityDisplay {
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.removeButton {
+    padding: 5px 10px; /* Adjust padding for appropriate size */
+    font-size: 0.9em; /* Smaller font size */
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545; /* Red background for remove button */
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Space above button */
+    align-self: flex-start; /* Align to the left within its container */
+}
+
+.removeButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.cartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Space above footer */
+}
+
+.cartTotal {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.buyNowButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    cursor: pointer;
+}
+
+.buyNowButton:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.emptyCart {
+    font-size: 1.2em;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+    flex: 1; /* Allow empty state to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
